@@ -1,0 +1,9 @@
+---
+ref: optional_args
+name: Pack to repro optional args problem
+description: "A simple pack to repro https://github.com/StackStorm/st2/issues/3217"
+keywords:
+    - "st2 issue 3217"
+version: 0.1.0
+author: st2-dev
+email: info@stackstorm.com

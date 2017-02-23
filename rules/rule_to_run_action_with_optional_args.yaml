@@ -1,0 +1,15 @@
+---
+name: rule_to_run_action_with_optional_args
+pack: optional_args
+description: Sample rule to run action_with_optional_args.
+enabled: true
+
+trigger:
+    type: "core.st2.webhook"
+    parameters:
+        url: "optargs"
+
+action:
+    ref: optional_args.action_with_optional_args
+    parameters:
+        arg1: "{{trigger.body.arg1}}"
